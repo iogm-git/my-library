@@ -1,0 +1,105 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #151515;
+    --xxxx: 3.5rem;
+    --xxx: 3rem;
+    --xx: 2.5rem;
+    --x: 2rem;
+    --l: 1.5rem;
+    --m: 1rem;
+    --s: .9rem;
+    --xs: .8rem;
+    --xxs: .7rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--m);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: var(--xxxx);
+}
+
+section {
+    width: 90vw;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.grid {
+    display: grid;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --xxxx: 3.35rem;
+        --xxx: 2.85rem;
+        --xx: 2.35rem;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    :root {
+        --xxxx: 3.25rem;
+        --xxx: 2.75rem;
+        --xx: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --xxxx: 3rem;
+        --xxx: 2.5rem;
+        --xx: 2rem;
+        --x: 1.75rem;
+        --l: 1.35rem
+    }
+}
+
+@media screen and (max-width: 640px) {
+    :root {
+        --xxxx: 2.85rem;
+        --xxx: 2.35rem;
+        --xx: 1.85rem;
+        --x: 1.65rem;
+        --l: 1.25rem
+    }
+}
+
+@media screen and (max-width: 512px) {
+    :root {
+        --xxxx: 2.75rem;
+        --xxx: 2.25rem;
+        --xx: 1.75rem;
+        --x: 1.5rem;
+        --l: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+        --m: .9rem;
+        --s: .8rem;
+        --xs: .7rem;
+        --xxs: .6rem;
+    }
+}
